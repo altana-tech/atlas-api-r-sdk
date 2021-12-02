@@ -74,7 +74,7 @@ FacilityApi <- R6::R6Class(
         Response$new("API server error", resp)
       }
 
-    }
+    },
     get_facility_products = function(facility_id, trade_direction, page, ...){
       args <- list(...)
       queryParams <- list()
@@ -110,7 +110,7 @@ FacilityApi <- R6::R6Class(
         Response$new("API server error", resp)
       }
 
-    }
+    },
     get_facility_trading_partners = function(facility_id, page, ...){
       args <- list(...)
       queryParams <- list()
@@ -142,7 +142,7 @@ FacilityApi <- R6::R6Class(
         Response$new("API server error", resp)
       }
 
-    }
+    },
     match_facility = function(company_name, full_address, ...){
       args <- list(...)
       queryParams <- list()
@@ -174,7 +174,7 @@ FacilityApi <- R6::R6Class(
         Response$new("API server error", resp)
       }
 
-    }
+    },
     search_facility = function(full_address, company_name, page, ...){
       args <- list(...)
       queryParams <- list()
