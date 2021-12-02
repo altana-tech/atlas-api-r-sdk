@@ -68,7 +68,7 @@ ProductApi <- R6::R6Class(
         Response$new("API server error", resp)
       }
 
-    }
+    },
     get_product_companies = function(product_id, trade_direction, page, ...){
       args <- list(...)
       queryParams <- list()
@@ -104,7 +104,7 @@ ProductApi <- R6::R6Class(
         Response$new("API server error", resp)
       }
 
-    }
+    },
     get_product_facilities = function(product_id, trade_direction, page, ...){
       args <- list(...)
       queryParams <- list()
