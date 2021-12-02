@@ -80,7 +80,7 @@ CompanyApi <- R6::R6Class(
         Response$new("API server error", resp)
       }
 
-    }
+    },
     get_company_edges = function(company_id, edge_type, country, trade_direction, page, ...){
       args <- list(...)
       queryParams <- list()
@@ -124,7 +124,7 @@ CompanyApi <- R6::R6Class(
         Response$new("API server error", resp)
       }
 
-    }
+    },
     get_company_facilities = function(company_id, page, ...){
       args <- list(...)
       queryParams <- list()
@@ -156,7 +156,7 @@ CompanyApi <- R6::R6Class(
         Response$new("API server error", resp)
       }
 
-    }
+    },
     get_company_products = function(company_id, trade_direction, page, ...){
       args <- list(...)
       queryParams <- list()
@@ -192,7 +192,7 @@ CompanyApi <- R6::R6Class(
         Response$new("API server error", resp)
       }
 
-    }
+    },
     get_trading_partners = function(company_id, page, ...){
       args <- list(...)
       queryParams <- list()
@@ -224,7 +224,7 @@ CompanyApi <- R6::R6Class(
         Response$new("API server error", resp)
       }
 
-    }
+    },
     match_company = function(query, country, full_address, hs2, has_restrictions, ...){
       args <- list(...)
       queryParams <- list()
@@ -268,7 +268,7 @@ CompanyApi <- R6::R6Class(
         Response$new("API server error", resp)
       }
 
-    }
+    },
     search_company = function(query, country, hs2, has_restrictions, page, ...){
       args <- list(...)
       queryParams <- list()
